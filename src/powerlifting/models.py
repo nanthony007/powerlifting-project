@@ -1,13 +1,12 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from datetime import datetime
-import enum
+
+from pydantic import BaseModel
 
 # enum for states?
 
-@dataclass
-class Meet:
+class Meet(BaseModel):
     federation: str
     date_: datetime
     country: str
