@@ -25,17 +25,3 @@ class Meet(BaseModel):
             town=info["MeetTown"],
             name=info["MeetName"]
         )
-
-    # SAMPLES, DELETE LATER AFTER LEARNING
-    
-    # object property, read only, goes on `meet`
-    @property
-    def is_fun(self):
-        return True
-
-    # object method, read only, goes on `meet` & needs `()`
-    def in_florida(self):
-        return self.state == 'FL'
-
-    def is_in_year(self, year):
-        return self.date_.year == year
