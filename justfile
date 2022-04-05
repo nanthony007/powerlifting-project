@@ -3,4 +3,4 @@ default:
 
 
 run:
-    @poetry run streamlit run app.py
+    @poetry run streamlit run app/app.py
